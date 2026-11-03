@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neelima P R – Senior Technical Writer</title>
+<meta name="description" content="Senior Technical Writer with 5+ years of experience in user guides, release notes, API documentation, UX content and instructional video.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✍️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf8f5;--surface:#fff;--text:#1d1b2e;--muted:#6a6880;--line:#e6e2da;--accent:#5b5fc7;--accent-soft:#ecebfb;}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14131c;--surface:#1d1c28;--text:#f0eef7;--muted:#a09db5;--line:#2d2b3b;--accent:#9a9dff;--accent-soft:#282749;}}
+:root[data-theme="dark"]{--bg:#14131c;--surface:#1d1c28;--text:#f0eef7;--muted:#a09db5;--line:#2d2b3b;--accent:#9a9dff;--accent-soft:#282749;}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:500;line-height:1.15}
+em{color:var(--accent);font-style:italic}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+section{padding:88px 0}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:10px}
+h2{font-size:clamp(2rem,4.5vw,2.8rem);margin-bottom:14px}
+.lead{color:var(--muted);max-width:640px;margin-bottom:40px}
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:Fraunces,serif;font-weight:500;width:38px;height:38px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;text-decoration:none;font-size:.95rem}
+nav ul{display:flex;gap:26px;list-style:none;padding:0;align-items:center}
+nav ul a{text-decoration:none;font-size:.92rem;color:var(--muted)}
+nav ul a:hover{color:var(--text)}
+button{font:inherit;cursor:pointer}
+.theme{background:none;border:1px solid var(--line);color:var(--text);border-radius:50%;width:34px;height:34px}
+/* hero */
+.hero{padding:96px 0 72px}
+.hero h1{font-size:clamp(2.8rem,8vw,5.4rem);margin-bottom:14px}
+.role{color:var(--accent);font-weight:600;margin-bottom:22px}
+.hero p.lead{font-size:1.1rem;margin-bottom:30px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;text-decoration:none;font-weight:500;font-size:.95rem;border:1px solid var(--accent)}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.ghost{color:var(--accent)}
+.stats{display:flex;gap:48px;flex-wrap:wrap;margin-top:56px;padding-top:32px;border-top:1px solid var(--line)}
+.stats b{display:block;font-family:Fraunces,serif;font-weight:500;font-size:2.4rem;color:var(--accent);line-height:1}
+.stats span{font-size:.85rem;color:var(--muted)}
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px;transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.card h3{font-size:1.3rem;margin-bottom:10px}
+.card p{color:var(--muted);font-size:.95rem;margin-bottom:14px}
+.card ul{list-style:none;padding:0;color:var(--muted);font-size:.92rem;margin-bottom:16px}
+.card li{padding-left:18px;position:relative;margin-bottom:6px}
+.card li::before{content:"→";position:absolute;left:0;color:var(--accent)}
+.tags{display:flex;gap:8px;flex-wrap:wrap}
+.tags span,.chips span{font-size:.78rem;padding:4px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:500}
+/* about / timeline */
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:56px}
+.about p{color:var(--muted);margin-bottom:16px}
+.timeline{border-left:2px solid var(--line);padding-left:26px}
+.item{position:relative;padding-bottom:28px}
+.item::before{content:"";position:absolute;left:-33px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+.item small{color:var(--accent);font-weight:600;font-size:.8rem}
+.item h3{font-size:1.15rem;margin:2px 0}
+.item p{font-size:.9rem;margin:0}
+/* tools */
+.tools{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px}
+.tools h3{font-size:1.05rem;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--surface);border:1px solid var(--line);color:var(--text)}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.edu .card h3{margin-bottom:4px}
+/* contact */
+.contact{text-align:center}
+.contact .lead{margin:0 auto 28px}
+.mail{font-family:Fraunces,serif;font-size:clamp(1.3rem,4vw,2rem);color:var(--accent);text-decoration:none;display:block;margin-bottom:22px;word-break:break-all}
+footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:var(--muted);font-size:.85rem}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--text);color:var(--bg);padding:10px 20px;border-radius:999px;font-size:.9rem;transition:transform .3s}
+.toast.show{transform:translateX(-50%)}
+@media(max-width:760px){.about{grid-template-columns:1fr;gap:36px}nav ul li:not(:last-child){display:none}section{padding:64px 0}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="#top" aria-label="Home">NP</a>
+  <ul>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#expertise">Expertise</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><button class="theme" id="theme" aria-label="Toggle theme">◐</button></li>
+  </ul>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <h1>I’m <em>Neelima.</em></h1>
+  <p class="role">Senior Technical Writer · UX Content · API Docs · Instructional Video</p>
+  <p class="lead">5+ years turning complex products into clear, user-friendly documentation. I now work with AI-powered content, from in-app chatbot content to custom GPT workflows.</p>
+  <div class="btns">
+    <a class="btn primary" href="#work">View my work</a>
+    <a class="btn ghost" href="#contact">Get in touch</a>
+  </div>
+  <div class="stats">
+    <div><b>5y 9m</b><span>Total experience</span></div>
+    <div><b>8</b><span>Featured projects</span></div>
+    <div><b>3</b><span>Companies</span></div>
+  </div>
+</div></header>
+
+<section id="work"><div class="wrap">
+  <p class="eyebrow">Selected Work</p>
+  <h2>Projects I’ve <em>shipped</em></h2>
+  <p class="lead">Highlights from my work at Planful, across in-app experiences, video, knowledge base, API and release content.</p>
+  <div class="grid">
+    <article class="card"><h3>Predict AI In-App Guide</h3>
+      <p>Built the in-app guide for Predict AI on Planful Cloud using Pendo.</p>
+      <ul><li>Applied UX copywriting for concise, user-friendly instructions</li><li>Added Instructional Shorts and GIFs</li><li>Created a FAQs section in Product Help</li><li>Partnered with Marketing, UX and Developers</li></ul>
+      <div class="tags"><span>Pendo</span><span>UX Copy</span><span>GIFs</span></div></article>
+    <article class="card"><h3>Audio-Visual User Help</h3>
+      <p>Introduced video-led help to Planful Online Help using Camtasia.</p>
+      <ul><li>Launched How-To Videos, Shorts, Product Explanation and New Feature Videos</li><li>Led Release Highlights Videos for the monthly release</li><li>Standardised storyboards and AI text-to-speech voiceover</li></ul>
+      <div class="tags"><span>Camtasia</span><span>Storyboarding</span><span>Text-to-Speech</span></div></article>
+    <article class="card"><h3>In-App AI Chatbot Content</h3>
+      <p>Owned the UX content for the Planful AI chatbot, end to end.</p>
+      <ul><li>Defined content style and format with UX Designers in Figma</li><li>Wrote the Feature Guide, prompting instructions, FAQs and best practices</li><li>Reviewed user search prompts to improve content accuracy</li></ul>
+      <div class="tags"><span>Figma</span><span>AI Content</span><span>Best Practices</span></div></article>
+    <article class="card"><h3>UX Content &amp; Style Guide</h3>
+      <p>Created a standardised UX Style Guide for Planful.</p>
+      <ul><li>Researched writing styles of leading tech companies</li><li>Built a Custom GPT to enforce tone, format and language</li><li>Catalogued and categorised legacy UX copy for revision</li></ul>
+      <div class="tags"><span>Style Guide</span><span>Custom GPT</span><span>Figma</span></div></article>
+    <article class="card"><h3>Knowledge Base Management</h3>
+      <p>Led the Document360 migration from v1.0 to v2.0.</p>
+      <ul><li>Applied custom CSS and branding updates</li><li>Supported help site privatisation</li><li>Used help site analytics to improve documentation</li></ul>
+      <div class="tags"><span>Document360</span><span>CSS</span><span>Analytics</span></div></article>
+    <article class="card"><h3>API Documentation</h3>
+      <p>Maintained REST API guides and release notes.</p>
+      <ul><li>Tested endpoints in Postman</li><li>Worked with Dev and QA to document validation messages accurately</li></ul>
+      <div class="tags"><span>REST API</span><span>Postman</span><span>Release Notes</span></div></article>
+    <article class="card"><h3>AI Prompt Analysis</h3>
+      <p>Analysed in-app chatbot prompts to find content gaps.</p>
+      <ul><li>Built a Custom GPT to reduce manual prompt screening</li><li>Used Google Analytics to improve retrieval and SEO opportunities</li><li>Updated User Help based on findings</li></ul>
+      <div class="tags"><span>Custom GPT</span><span>Google Analytics</span><span>SEO</span></div></article>
+    <article class="card"><h3>Release Management</h3>
+      <p>Led content publishing for the monthly release cycle.</p>
+      <ul><li>Published from internal to production after each deployment</li><li>Maintained Release Notes, Help Articles, FAQs and a RIKIs repository</li><li>Standardised release note structure and led sandbox updates</li></ul>
+      <div class="tags"><span>Release Notes</span><span>RIKIs</span><span>Publishing</span></div></article>
+  </div>
+</div></section>
+
+<section id="expertise" style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap">
+  <p class="eyebrow">What I Do</p>
+  <h2>Core <em>Expertise</em></h2>
+  <p class="lead">I manage the documentation lifecycle in Agile teams, from requirements gathering to publication, with a focus on quality and consistency.</p>
+  <div class="grid">
+    <div class="card" style="background:var(--bg)"><h3>Product Documentation</h3><p>User Guides, Configuration Guides, Best Practices, FAQs, Release Notes and RIKIs.</p></div>
+    <div class="card" style="background:var(--bg)"><h3>UX Writing</h3><p>UX microcopy, in-app guides and chatbot content aligned with product requirements and design specs.</p></div>
+    <div class="card" style="background:var(--bg)"><h3>Instructional Video</h3><p>Workflow optimisation, AI-powered storyboards and Text-to-Speech voiceover integration.</p></div>
+    <div class="card" style="background:var(--bg)"><h3>API Documentation</h3><p>REST API guides and release notes, validated by testing endpoints in Postman.</p></div>
+    <div class="card" style="background:var(--bg)"><h3>AI-Powered Content</h3><p>Custom GPTs for style enforcement and prompt screening, plus analysis of chatbot search behaviour.</p></div>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <p class="eyebrow">About</p>
+  <h2>My <em>Journey</em></h2>
+  <div class="about" style="margin-top:32px">
+    <div>
+      <p>I’m a senior technical writer with an M.A. in Applied Linguistics and a B.A. in English Literature, a background that shapes how I think about clarity, structure and the reader.</p>
+      <p>I started in 2019 at HighRadius and have since written for fintech, automotive software and enterprise planning products. Over the last few years at Planful, I moved from product documentation into UX content, video, API docs and AI-driven content workflows.</p>
+      <p>I like work where words, design and data meet, and where a good explanation measurably helps users.</p>
+    </div>
+    <div class="timeline">
+      <div class="item"><small>Jul 2024 – May 2025</small><h3>Senior Technical Writer</h3><p>Planful</p></div>
+      <div class="item"><small>Aug 2022 – Jul 2024</small><h3>Technical Writer</h3><p>Planful</p></div>
+      <div class="item"><small>Sep 2021 – Jul 2022</small><h3>Associate Technical Writer</h3><p>CDK Global</p></div>
+      <div class="item"><small>Jun 2021 – Sep 2021</small><h3>Freelance Writer</h3><p>Edvoy Educational Services</p></div>
+      <div class="item"><small>May 2019 – Dec 2020</small><h3>Associate Technical Writer</h3><p>HighRadius</p></div>
+    </div>
+  </div>
+</div></section>
+
+<section style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap">
+  <p class="eyebrow">Tech Stack</p>
+  <h2>Tools &amp; <em>Technologies</em></h2>
+  <div class="tools" style="margin-top:32px">
+    <div><h3>Authoring &amp; Help</h3><div class="chips"><span>MadCap Flare</span><span>Document360</span><span>RoboHelp</span><span>XML Editor</span><span>Confluence</span><span>Notion</span></div></div>
+    <div><h3>Product &amp; Dev</h3><div class="chips"><span>Pendo</span><span>Postman API</span><span>GitHub</span><span>Jira</span><span>Google Analytics</span></div></div>
+    <div><h3>AI Tools</h3><div class="chips"><span>ChatGPT</span><span>Claude</span><span>Copy.ai</span></div></div>
+    <div><h3>Design &amp; Media</h3><div class="chips"><span>Figma</span><span>Snagit</span><span>Camtasia</span><span>Canva</span><span>DaVinci Resolve</span><span>Adobe Premiere Pro</span><span>Wistia</span></div></div>
+    <div><h3>Voiceover</h3><div class="chips"><span>Amazon Polly</span><span>Voice Maker</span></div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="eyebrow">Education</p>
+  <h2>Where I <em>studied</em></h2>
+  <div class="edu" style="margin-top:32px">
+    <div class="card"><small style="color:var(--accent);font-weight:600">2019</small><h3>M.A. Applied Linguistics</h3><p style="margin:0">Hyderabad Central University</p></div>
+    <div class="card"><small style="color:var(--accent);font-weight:600">2017</small><h3>B.A. English Literature</h3><p style="margin:0">Calicut University</p></div>
+  </div>
+</div></section>
+
+<section id="contact" class="contact" style="background:var(--surface);border-top:1px solid var(--line)"><div class="wrap">
+  <p class="eyebrow">Get In Touch</p>
+  <h2>Let’s Work <em>Together</em></h2>
+  <p class="lead">Need user guides, a help center, UX content or API docs? I’d love to hear about your project.</p>
+  <a class="mail" href="mailto:neelspr4@gmail.com">neelspr4@gmail.com</a>
+  <div class="btns" style="justify-content:center">
+    <a class="btn primary" href="mailto:neelspr4@gmail.com">Send an email</a>
+    <button class="btn ghost" id="copy" style="background:none">Copy email</button>
+  </div>
+</div></section>
+
+<footer>© <span id="yr">2026</span> Neelima P R · Senior Technical Writer</footer>
+<div class="toast" id="toast">Email copied</div>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+var t=document.getElementById('toast');
+document.getElementById('copy').onclick=function(){
+  try{navigator.clipboard.writeText('neelspr4@gmail.com');}catch(e){}
+  t.classList.add('show');setTimeout(function(){t.classList.remove('show')},1800);
+};
+document.getElementById('theme').onclick=function(){
+  var r=document.documentElement,
+  dark=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+  r.dataset.theme=dark?'light':'dark';
+};
+</script>
+</body>
+</html>
