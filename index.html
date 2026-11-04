@@ -56,6 +56,12 @@ button{font:inherit;cursor:pointer}
 .card li::before{content:"→";position:absolute;left:0;color:var(--accent)}
 .tags{display:flex;gap:8px;flex-wrap:wrap}
 .tags span,.chips span{font-size:.78rem;padding:4px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:500}
+/* work samples */
+.sample{display:flex;flex-direction:column;text-decoration:none}
+.sample .type{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:8px}
+.sample p{flex:1}
+.sample .go{color:var(--accent);font-weight:500;font-size:.95rem}
+.sample:hover .go{text-decoration:underline}  
 /* about / timeline */
 .about{display:grid;grid-template-columns:1.1fr 1fr;gap:56px}
 .about p{color:var(--muted);margin-bottom:16px}
@@ -88,6 +94,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
   <a class="logo" href="#top" aria-label="Home">NP</a>
   <ul>
     <li><a href="#work">Work</a></li>
+    <li><a href="#samples">Samples</a></li>
     <li><a href="#expertise">Expertise</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -104,7 +111,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
     <a class="btn ghost" href="#contact">Get in touch</a>
   </div>
   <div class="stats">
-    <div><b>5+</b><span>Total Experience</span></div>
+    <div><b>5y 9m</b><span>Total Experience</span></div>
     <div><b>4</b><span>Video Production Experience</span></div>
     <div><b>4</b><span> API & UX Writing Experience</span></div>
   </div>
@@ -149,6 +156,33 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
       <div class="tags"><span>Document360</span><span>JIRA</span><span>Monthly Release</span></div></article>
   </div>
 </div></section>
+  
+<section id="samples"><div class="wrap">
+  <p class="eyebrow">Work Samples</p>
+  <h2>Read the <em>work</em></h2>
+  <p class="lead">A selection of Help Articles, API documentation, and video samples.</p>
+  <div class="grid">
+    <a class="card sample" href="https://drive.google.com/file/d/1HbBHCEW3wQmYBrd9LQflwYjTlQtiE6YT/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+      <span class="type">API Documentation</span><h3>API Doc</h3>
+      <p>An release update of REST API documentation.</p><span class="go">Open in Drive →</span></a>
+    <a class="card sample" href="https://drive.google.com/file/d/1EwWUBjkNC3OJR5_i4bYogqDI78WGZb_5/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+      <span class="type">Instructional Video</span><h3>How-to Video</h3>
+      <p>A how-to video from the audio-visual help program.</p><span class="go">Open in Drive →</span></a>
+    <a class="card sample" href="https://drive.google.com/file/d/1PfLOt0CkiAU0pH2d7DytiS9ZYOxh6wiF/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+      <span class="type">Release Content</span><h3>Release Notes</h3>
+      <p>A release note from the monthly release cycle.</p><span class="go">Open in Drive →</span></a>
+    <a class="card sample" href="https://drive.google.com/file/d/1204dxcgvixAx2slQ28cEHaLwyPuNjh4P/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+      <span class="type">User Help</span><h3>Help Article</h3>
+      <p>A  help article for a product feature.</p><span class="go">Open in Drive →</span></a>
+    <a class="card sample" href="https://drive.google.com/file/d/19GS4RMkxHIV6hrQPZikmg3ioVMQR0syY/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+      <span class="type">Release Content</span><h3>Feature Update</h3>
+      <p>A feature update announcing new product capabilities.</p><span class="go">Open in Drive →</span></a>
+  <a class="card sample" href="https://developers.planful.com/#84748adb-baaa-4e69-8afd-566d77788306" target="_blank" rel="noopener noreferrer">
+    <span class="type"> API Documentation</span><h3>Get Approval Role</h3><span class="go">→</span></a>
+    
+    
+  </div>
+</div></section>
 
 <section id="expertise" style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap">
   <p class="eyebrow">What I Do</p>
@@ -160,29 +194,6 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
     <div class="card" style="background:var(--bg)"><h3>Instructional Video</h3><p>Release Highlights videos, Feature Update videos, and How-To videos with AI-powered storyboards and Text-to-Speech voiceover integration.</p></div>
     <div class="card" style="background:var(--bg)"><h3>API Documentation</h3><p>REST API guides and release notes, validated by testing endpoints in Postman.</p></div>
     <div class="card" style="background:var(--bg)"><h3>AI-Powered Content</h3><p>Custom GPTs for style enforcement and prompt screening, plus analysis of chatbot search behaviour.</p></div>
-  </div>
-</div></section>
-
-<section id="samples"><div class="wrap">
-  <p class="eyebrow">Work Samples</p>
-  <h2>Read the <em>work</em></h2>
-  <p class="lead">A selection of Help Articles, API documentation, and video samples.</p>
-  <div class="grid">
-    <a class="card sample" href="https://drive.google.com/file/d/1HbBHCEW3wQmYBrd9LQflwYjTlQtiE6YT/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-      <span class="type">API Documentation</span><h3>API Doc</h3>
-      <p>A sample of REST API documentation.</p><span class="go">View sample →</span></a>
-    <a class="card sample" href="https://drive.google.com/file/d/1EwWUBjkNC3OJR5_i4bYogqDI78WGZb_5/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-      <span class="type">Instructional Video</span><h3>How-to Video</h3>
-      <p>A sample how-to video from the audio-visual help program.</p><span class="go">Watch sample →</span></a>
-    <a class="card sample" href="https://drive.google.com/file/d/1PfLOt0CkiAU0pH2d7DytiS9ZYOxh6wiF/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-      <span class="type">Release Content</span><h3>Release Notes</h3>
-      <p>A sample of release notes from the monthly release cycle.</p><span class="go">View sample →</span></a>
-    <a class="card sample" href="https://drive.google.com/file/d/1204dxcgvixAx2slQ28cEHaLwyPuNjh4P/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-      <span class="type">User Help</span><h3>Help Article</h3>
-      <p>A sample help article for a product feature.</p><span class="go">View sample →</span></a>
-    <a class="card sample" href="https://drive.google.com/file/d/19GS4RMkxHIV6hrQPZikmg3ioVMQR0syY/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-      <span class="type">Release Content</span><h3>Feature Update</h3>
-      <p>A sample feature update announcing new product capabilities.</p><span class="go">View sample →</span></a>
   </div>
 </div></section>
   
