@@ -3,7 +3,7 @@
 A single-page portfolio website for Neelima P R, Senior Technical Writer. It showcases projects, core expertise, work history, tools and contact details.
 
 **Live site:** `https://<your-username>.github.io/<repo-name>/`
-
+ 
 ## Features
 
 - Single self-contained `index.html` with no build step and no dependencies
