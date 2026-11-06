@@ -10,10 +10,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f6f3fd;--bg-gradient:linear-gradient(160deg,#f9f6ff 0%,#ebe5fb 50%,#dfe5fb 100%);--surface:#ffffff;--text:#2a2540;--muted:#6b6685;--line:#ddd6f0;--accent:#6c63d9;--accent-soft:#ebe7fb;}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14131c;--surface:#1d1c28;--text:#f0eef7;--muted:#a09db5;--line:#2d2b3b;--accent:#9a9dff;--accent-soft:#282749;}}
-:root[data-theme="dark"]{--bg:#14131c;--surface:#1d1c28;--text:#f0eef7;--muted:#a09db5;--line:#2d2b3b;--accent:#9a9dff;--accent-soft:#282749;}
-body{background-color:var(--bg);background-image:var(--bg-gradient);background-attachment:fixed;color:var(--text);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+:root{--bg:#f6f3fd;--surface:#ffffff;--ink:#2a2540;--muted:#6b6685;--line:#ddd6f0;--accent:#6c63d9;--accent-soft:#ebe7fb;}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14131c;--surface:#1d1c28;--ink:#f0eef7;--muted:#a09db5;--line:#2d2b3b;--accent:#9a9dff;--accent-soft:#282749;}}
+:root[data-theme="dark"]{--bg:#14131c;--surface:#1d1c28;--ink:#f0eef7;--muted:#a09db5;--line:#2d2b3b;--accent:#9a9dff;--accent-soft:#282749;}
+body{background-color:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:500;line-height:1.15}
 em{color:var(--accent);font-style:italic}
 a{color:inherit}
@@ -31,9 +31,9 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .logo{font-family:Fraunces,serif;font-weight:500;width:38px;height:38px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;text-decoration:none;font-size:.95rem}
 nav ul{display:flex;gap:26px;list-style:none;padding:0;align-items:center}
 nav ul a{text-decoration:none;font-size:.92rem;color:var(--muted)}
-nav ul a:hover{color:var(--text)}
+nav ul a:hover{color:var(--ink)}
 button{font:inherit;cursor:pointer}
-.theme{background:none;border:1px solid var(--line);color:var(--text);border-radius:50%;width:34px;height:34px}
+.theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:50%;width:34px;height:34px}
 /* hero */
 .hero{padding:96px 0 72px}
 .hero h1{font-size:clamp(2.8rem,8vw,5.4rem);margin-bottom:14px}
@@ -76,7 +76,7 @@ button{font:inherit;cursor:pointer}
 .tools{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px}
 .tools h3{font-size:1.05rem;margin-bottom:14px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips span{background:var(--surface);border:1px solid var(--line);color:var(--text)}
+.chips span{background:var(--surface);border:1px solid var(--line);color:var(--ink)}
 .edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
 .edu .card h3{margin-bottom:4px}
 /* contact */
@@ -84,7 +84,7 @@ button{font:inherit;cursor:pointer}
 .contact .lead{margin:0 auto 28px}
 .mail{font-family:Fraunces,serif;font-size:clamp(1.3rem,4vw,2rem);color:var(--accent);text-decoration:none;display:block;margin-bottom:22px;word-break:break-all}
 footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:var(--muted);font-size:.85rem}
-.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--text);color:var(--bg);padding:10px 20px;border-radius:999px;font-size:.9rem;transition:transform .3s}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--ink);color:var(--bg);padding:10px 20px;border-radius:999px;font-size:.9rem;transition:transform .3s}
 .toast.show{transform:translateX(-50%)}
 @media(max-width:760px){.about{grid-template-columns:1fr;gap:36px}nav ul li:not(:last-child){display:none}section{padding:64px 0}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
