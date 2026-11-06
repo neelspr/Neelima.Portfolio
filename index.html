@@ -119,7 +119,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
 </p>
   <p class="lead">5+ years turning complex technical systems into clear, user-friendly documentation. Exploring AI-powered solutions to optimize content and streamline documentation workflows.</p>
   <div class="btns">
-    <a class="btn primary" href="#work">View my work</a>
+    <a class="btn primary" href="#samples">View my work</a>
     <a class="btn ghost" href="#contact">Get in touch</a>
   </div>
   <div class="stats">
@@ -253,11 +253,6 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
 
 <script>
 document.getElementById('yr').textContent=new Date().getFullYear();
-var t=document.getElementById('toast');
-document.getElementById('copy').onclick=function(){
-  try{navigator.clipboard.writeText('neelspr4@gmail.com');}catch(e){}
-  t.classList.add('show');setTimeout(function(){t.classList.remove('show')},1800);
-};
 document.getElementById('theme').onclick=function(){
   var r=document.documentElement,
   dark=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
