@@ -11,9 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f6f3fd;--bg-gradient:linear-gradient(160deg,#f9f6ff 0%,#ebe5fb 50%,#dfe5fb 100%);--surface:#ffffff;--ink:#2a2540;--muted:#6b6685;--line:#ddd6f0;--accent:#6c63d9;--accent-soft:#ebe7fb;}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14131c;--bg-gradient:none;--surface:#1d1c28;--ink:#f0eef7;--muted:#a09db5;--line:#2d2b3b;--accent:#9a9dff;--accent-soft:#282749;}}
 :root[data-theme="dark"]{--bg:#14131c;--bg-gradient:none;--surface:#1d1c28;--ink:#f0eef7;--muted:#a09db5;--line:#2d2b3b;--accent:#9a9dff;--accent-soft:#282749;}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.primary,:root:not([data-theme="light"]) .logo{color:#14131c}}
 :root[data-theme="dark"] .btn.primary,:root[data-theme="dark"] .logo{color:#14131c}
 body{background-color:var(--bg);background-image:var(--bg-gradient);background-attachment:fixed;color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:500;line-height:1.15}
@@ -252,12 +250,15 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
 <footer>© <span id="yr">2026</span> Neelima P R · Senior Technical Writer</footer>
 
 <script>
-document.getElementById('yr').textContent=new Date().getFullYear();
-document.getElementById('theme').onclick=function(){
-  var r=document.documentElement,
-  dark=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
-  r.dataset.theme=dark?'light':'dark';
-};
+(function(){
+  var r=document.documentElement;
+  try{var s=localStorage.getItem('theme');if(s==='dark'||s==='light')r.dataset.theme=s;}catch(e){}
+  document.getElementById('theme').onclick=function(){
+    var next=r.dataset.theme==='dark'?'light':'dark';
+    r.dataset.theme=next;
+    try{localStorage.setItem('theme',next);}catch(e){}
+  };
+})();
 (function(){
   var el=document.querySelector('#typed-role .typed-text');
   if(!el||matchMedia('(prefers-reduced-motion:reduce)').matches)return;
